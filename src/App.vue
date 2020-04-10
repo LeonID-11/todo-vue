@@ -21,7 +21,8 @@
 
         <button 
           @click="editTask(task.id)"
-        >{{task.markerBtn}}</button>
+          v-html="task.markerBtn"
+        ></button>
       </li>
     </ul>
   </div>
